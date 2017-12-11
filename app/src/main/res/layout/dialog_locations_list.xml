@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+    <include layout="@layout/toolbar"/>
+    <ImageView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <ListView
+        android:drawSelectorOnTop="true"
+        android:id="@+id/lstLocations"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"
+        />
+    <TextView
+        android:id="@+id/txtSelectedLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:background="#E3E7EA"
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+    </RelativeLayout>

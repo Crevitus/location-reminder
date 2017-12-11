@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/main_fragment_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    >
+
+    <de.timroes.android.listview.EnhancedListView
+        android:drawSelectorOnTop="true"
+        android:id="@+id/lstReminders"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"
+        android:background="#F44336"
+        />
+
+
+</RelativeLayout>
